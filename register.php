@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
         $error1="";
         $user = "lomi";
         $pass = "1769b5fe84ef4711af78775c267f54a6";
-        $dbh = new PDO('mysql:host=localhost;dbname=lomick', $user, $pass);
+        $dbh = new PDO('mysql:host=mysql;dbname=lomick', $user, $pass);
         $stmt = $dbh->query("SELECT * FROM `tbl_users`");
         while ($row = $stmt->fetch()) {
             if($row['Email']==$email){
