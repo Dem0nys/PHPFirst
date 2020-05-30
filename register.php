@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
         $error="";
         $error1="";
         $user = "lomi";
-        $pass = "Qwerty-1";
+        $pass = "1769b5fe84ef4711af78775c267f54a6";
         $dbh = new PDO('mysql:host=localhost;dbname=lomick', $user, $pass);
         $stmt = $dbh->query("SELECT * FROM `tbl_users`");
         while ($row = $stmt->fetch()) {

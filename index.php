@@ -18,7 +18,7 @@
         <th scope="col">Image</th>
     </tr>
     <?php
-    $connection = mysqli_connect('localhost', 'lomi', 'Qwerty-1', 'lomick');
+    $connection = mysqli_connect('mysql', 'lomi', '1769b5fe84ef4711af78775c267f54a6', 'lomick');
     $sql = "SELECT Email, Password, Image FROM tbl_users";
     $result = mysqli_query($connection, $sql);
     if(mysqli_num_rows($result) > 0){
